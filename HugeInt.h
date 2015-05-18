@@ -15,8 +15,8 @@ public:
   HugeInt(const string &);
 
   const HugeInt &operator=(const HugeInt &);
-  const HugeInt &operator+(const HugeInt &);
-  const HugeInt &operator-(HugeInt);
+  const HugeInt operator+(const HugeInt &);
+  const HugeInt operator-(HugeInt);
 
 private:
   int int_num[100];     //store most 100 digits
